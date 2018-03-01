@@ -1,0 +1,5 @@
+title: Example
+----
+view: default
+----
+text: A subpage with a file.

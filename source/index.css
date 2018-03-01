@@ -1,0 +1,54 @@
+:root {
+  --background: #fff;
+  --foreground: #000;
+}
+
+html {
+  font-size: 2vw;
+}
+
+body {
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+  background: var(--background);
+  color: var(--foreground);
+  line-height: 1.5;
+  font-size: 1rem;
+  padding: 3rem;
+}
+
+a {
+  text-decoration: none;
+  color: #00f;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/** 
+ * container
+ */
+
+.container {
+  grid-template-columns: repeat(12, 1fr);
+  padding: 0.5rem;
+  display: grid;
+}
+
+.container > *:nth-child(1) {
+  grid-column-end: span 3;
+}
+
+.container > *:nth-child(2) {
+  grid-column-end: span 9;
+}
+
+/**
+ * typography
+ */
+
+@font-face {
+  src: url(/assets/labmono-regular.otf);
+  font-family: 'Input Mono';
+  font-weight: normal;
+}
