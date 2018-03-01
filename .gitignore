@@ -1,4 +1,5 @@
 .DS_Store
+.dat
 node_modules
 bundles/bundle.js
 bundles/bundle.css
