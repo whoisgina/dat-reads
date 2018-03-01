@@ -1,6 +1,6 @@
 <h1 align="center">Enoki / Jacinto</h1>
 
-Truly the most basic design. An example of how to load a site’s content and problematically display whatever content is available, regardless of what fields are available.
+A simple blog design for Enoki.
 
 Consider it a boilerplate instead of a reference to study. Takes these ideas with you to use from memory in the future.
 
