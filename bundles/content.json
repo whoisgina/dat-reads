@@ -1,39 +1,66 @@
 {
+  "/about": {
+    "title": "About",
+    "view": "about",
+    "text": "Hey there!",
+    "name": "about",
+    "path": "/content/about",
+    "url": "/about",
+    "files": {},
+    "pages": {}
+  },
+  "/entries": {
+    "title": "Entries",
+    "view": "entries",
+    "name": "entries",
+    "path": "/content/entries",
+    "url": "/entries",
+    "files": {},
+    "pages": {
+      "example-page": {
+        "name": "example-page",
+        "path": "/content/entries/example-page",
+        "url": "/entries/example-page",
+        "source": "/content/entries/example-page"
+      }
+    }
+  },
+  "/entries/example-page": {
+    "title": "Example page",
+    "view": "entry",
+    "date": "2013-05-09",
+    "tags": [
+      "one",
+      "two"
+    ],
+    "text": "Testing!",
+    "name": "example-page",
+    "path": "/content/entries/example-page",
+    "url": "/entries/example-page",
+    "files": {},
+    "pages": {}
+  },
   "/": {
-    "title": "Vacant",
-    "view": "default",
+    "title": "Jacinto",
+    "view": "home",
     "text": "Enokitake, also Enokidake or Enoki, are cultivars of Flammulina velutipes, also known by the name golden needle mushroom or lily mushroom.",
     "name": "content",
     "path": "/content",
     "url": "/",
     "files": {},
     "pages": {
-      "example": {
-        "name": "example",
-        "path": "/content/example",
-        "url": "/example",
-        "source": "/content/example"
+      "about": {
+        "name": "about",
+        "path": "/content/about",
+        "url": "/about",
+        "source": "/content/about"
+      },
+      "entries": {
+        "name": "entries",
+        "path": "/content/entries",
+        "url": "/entries",
+        "source": "/content/entries"
       }
     }
-  },
-  "/example": {
-    "title": "Example",
-    "view": "default",
-    "text": "A subpage with a file.",
-    "name": "example",
-    "path": "/content/example",
-    "url": "/example",
-    "files": {
-      "mushrooms.jpg": {
-        "name": "mushrooms",
-        "path": "/content/example/mushrooms.jpg",
-        "url": "/example/mushrooms.jpg",
-        "source": "dat://68a206a64a3f30dda8720625592b8b07d02e2ad3a6116ce3b6b05230e7bb1566/content/example/mushrooms.jpg",
-        "extension": ".jpg",
-        "filename": "mushrooms.jpg",
-        "type": "image"
-      }
-    },
-    "pages": {}
   }
 }

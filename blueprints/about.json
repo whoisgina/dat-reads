@@ -1,0 +1,24 @@
+{
+  "title": "About",
+  "pages": false,
+  "files": false,
+  "layout": {
+    "content": {
+      "width": "1/1",
+      "fields": [
+        "title",
+        "text"
+      ]
+    }
+  },
+  "fields": {
+    "title": {
+      "label": "Title",
+      "type": "text"
+    },
+    "text": {
+      "label": "Text",
+      "type": "textarea"
+    }
+  }
+}

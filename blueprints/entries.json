@@ -1,0 +1,22 @@
+{
+  "title": "Entries",
+  "pages": {
+    "view": "entry"
+  },
+  "layout": {
+    "content": {
+      "width": "1/1",
+      "fields": ["title", "pages"]
+    }
+  },
+  "fields": {
+    "title": {
+      "label": "Title",
+      "type": "text"
+    },
+    "pages": {
+      "label": "Pages",
+      "type": "pages"
+    }
+  }
+}

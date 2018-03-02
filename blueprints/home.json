@@ -1,0 +1,38 @@
+{
+  "title": "Home",
+  "files": false,
+  "layout": {
+    "nav": {
+      "width": "1/2",
+      "fields": ["pages"]
+    },
+    "content": {
+      "width": "1/2",
+      "fields": [
+        "title",
+        "background",
+        "foreground"
+      ]
+    }
+  },
+  "fields": {
+    "title": {
+      "label": "Title",
+      "type": "text"
+    },
+    "pages": {
+      "label": "Content",
+      "type": "pages"
+    },
+    "background": {
+      "label": "Background Color",
+      "type": "color",
+      "width": "1/2"
+    },
+    "foreground": {
+      "label": "Text Color",
+      "type": "color",
+      "width": "1/2"
+    }
+  }
+}

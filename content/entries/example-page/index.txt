@@ -1,0 +1,12 @@
+title: Example page
+----
+view: entry
+----
+date: 2013-05-09
+----
+tags:
+  - one
+  - two
+
+----
+text: Testing!
