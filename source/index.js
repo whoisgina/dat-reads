@@ -5,7 +5,8 @@ var choo = require('choo')
 // our app
 var app = choo()
 app.use(require('enoki/choo')())
-app.route('*', require('./views/default'))
+app.use(require('./plugins/scroll'))
+app.route('*', require('./views/wrapper'))
 
 // start
 if (!module.parent) app.mount('body')

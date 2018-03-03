@@ -1,12 +1,12 @@
 var html = require('choo/html')
-var renderEntry = require('../components/entry')
+var feedEntries = require('../components/feed-entries')
 
 module.exports = view
 
 function view (state, emit) {
   return html`
     <div>
-      ${state.page.title}
+      ${feedEntries(state, emit)}
     </div>
   `
 }
