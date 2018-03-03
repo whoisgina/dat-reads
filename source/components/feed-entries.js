@@ -12,20 +12,21 @@ function feedEntries (state, emit) {
   var entries = objectValues(page.pages)
     .map(page => state.content[page.url])
     .map(page => xtend(page, { text: formatText(page.text) }))
-    .map(renderEntry)
+
+  if (typeof page.sort === 'string') {
+    entries = getPagesSort(entries, page.sort) 
+  }
 
   return html`
     <ul class="entries">
-      ${entries}
+      ${entries.map(renderEntry)}
     </ul>
   ` 
 
   function renderEntry (page) {
     return html`
       <li>
-        <a href="${page.url}">
-          ${entry(page, emit)}
-        </a>
+        <a href="${page.url}">${entry(page, emit)}</a>
       </li>
     `
   }
@@ -37,4 +38,25 @@ function formatText (str) {
     .splice(0, 3)
     .join('\n')
     .trim()
+}
+
+function getPagesSort (pages, sort) {
+  switch (sort) {
+    case 'alphabetical':
+      return pages.sort(function (a, b) { 
+        return (a.title || a.name).localeCompare(b.title || b.name)
+      })
+    case 'reverse-alphabetical':
+      return pages.sort(function (a, b) { 
+        return (b.title || b.name).localeCompare(a.title || a.name)
+      })
+    case 'reverse-chronological':
+      return pages.sort(function (a, b) { 
+        if (a.date && b.date) return new Date(b.date) - new Date(a.date)
+      })
+    case 'chronological':
+      return pages.sort(function (a, b) { 
+        if (a.date && b.date) return new Date(a.date) - new Date(b.date)
+      })
+  }
 }

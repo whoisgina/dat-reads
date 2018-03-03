@@ -20,6 +20,8 @@ a {
   text-decoration: none;
 }
 
+h1 { font-weight: bold }
+
 /**
  * nav
  */
@@ -27,6 +29,8 @@ a {
 nav {
   padding: 2rem;
 }
+
+.link-active { font-weight: bold }
 
 /**
  * copy
@@ -48,7 +52,15 @@ nav {
   margin: 0;
 }
 
-.copy-width p {
+.copy ul, .copy li {
+  list-style: disc;
+}
+
+.copy li {
+  margin-left: 2rem;
+}
+
+.copy-width > *:not(figure) {
   max-width: 55rem;
 }
 
@@ -95,6 +107,34 @@ nav {
 
 .container > :nth-child(1) { grid-column-end: span 4 }
 .container > :nth-child(2) { grid-column-end: span 8 }
+
+/**
+ * content
+ */
+
+.content {
+  padding: 2rem;
+}
+
+/**
+ * lists
+ */
+
+.comma-item:not(:last-child):after {
+  content: ', ';
+}
+
+/**
+ * not found
+ */
+
+.notfound {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 8rem);
+  width: 100vw;
+}
 
 /**
  * loading

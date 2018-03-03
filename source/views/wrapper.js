@@ -8,6 +8,7 @@ module.exports = view
 
 function view (state, emit) {
   state.page = state.content[state.href || '/']
+
   // loading
   if (!state.site.loaded) return renderLoading(state, emit)
   // 404
@@ -40,7 +41,11 @@ function renderLoading (state, emit) {
 function renderNotFound (state, emit) {
   return html`
     <body>
-      <h1>Page not found</h1>
+      ${renderStyles(state, emit)}
+      ${renderNavigation(state, emit)}
+      <div class="notfound">
+        Page not found
+      </div>
     </body>
   `
 }
@@ -61,11 +66,12 @@ function renderNavigation (state, emit) {
   var home = state.content['/']
   var pages = objectValues(home.pages)
     .map(page => state.content[page.url])
+    .filter(page => page.visible !== false)
 
   return html`
     <nav class="container">
       <div>
-        <b><a href="${home.url}">${home.title}</a></b>
+        <h1><a href="${home.url}">${home.title}</a></h1>
       </div>
       <div>
         ${pages.map(renderLink)}
@@ -73,9 +79,10 @@ function renderNavigation (state, emit) {
     </nav>
   `
 
-  function renderLink (props, i, arr) {
+  function renderLink (props) {
+    var activeClass = state.href && props.url.indexOf(state.href) >= 0 ? 'link-active' : ''
     return html`
-      <a href="${props.url}">${props.title}</a>
+      <span class="comma-item ${activeClass}"><a href="${props.url}">${props.title}</a></span>
     `
   }
 }
