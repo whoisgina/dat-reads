@@ -2,9 +2,8 @@ title: About
 ----
 view: about
 ----
-text: This interview is presented, in part, to extend the discussions held at the Cybernetics Conference on November 18, 2017 in NYC.
+text: These interview excerpts are presented by [Avant](http://avant.org), in part, to extend the discussions held at the Cybernetics Conference on November 18, 2017 in NYC.
 
-- [Avant](http://avant.org/)
 - [Stephen Willats](http://avant.org/author/stephen-willats)
 - [Sarah Hamerman](http://avant.org/author/sarah-hamerman)
 
