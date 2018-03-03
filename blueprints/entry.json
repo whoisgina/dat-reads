@@ -9,6 +9,7 @@
     "date": {
       "label": "Date",
       "type": "date",
+      "default": "today",
       "width": "1/2"
     },
     "tags": {

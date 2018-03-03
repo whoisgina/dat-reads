@@ -1,0 +1,25 @@
+title: Publishing as cybernetic practice
+----
+view: entry
+----
+date: 2018-03-01
+----
+text: Since 1965, British artist [Stephen Willats](http://stephenwillats.com/) has self-published _Control_ magazine, a seminal forum for artists’ writings on art practice and social organization. With over 150 contributors throughout its 50-year run, _Control_ has drawn on research from cybernetics, advertising theory, and behavioral science to develop models for how artworks operate in dialogue with an audience and society at large. Last year Willats published the 20th issue of _Control_, in which he continues to pose incisive questions about the ethics of information systems and networked artistic practice that feel more crucial than ever.
+
+Cybernetics was famously defined by Norbert Wiener as “the scientific study of communication and control in the animal and the machine.” The models of feedback that cyberneticians developed were transdisciplinary from the outset, bridging the worlds of computation and engineering with those of design, art, and counterculture.
+
+![](dat://2294f8789a7dac7028c2aaebd47d287b148f45ad35ba697eb80a505066420a40/content/entries/another-one/fig_1.png)
+
+According to [Anthony Hudek](http://www.ravenrow.org/texts/55/), “It is … _Control_’s function as a self-determining information network, instead of its content, that makes it truly cybernetic”: while being about networks, the magazine also represents a network in itself. Willats’ choice of title, _Control_, signals this departure from traditional models of editorial authority, seeking instead to develop a conceptual practice determined by the networked relationships of coordinating agents. Artists’ publishing served as a key means of actualizing these ideas. The magazine has always been self-published, self-funded, and free of advertising, while also attaining a broadly international reach.
+
+The interview that follows focuses specifically on _Control_’s early years, notable for their iconic cover illustrations by designer Dean Bradley. Released between 1965 and 1970, _Control_’s first issues mark a period when cybernetic ideas resonated broadly within the visual arts, from Jasia Reichardt’s 1968 Cybernetic Serendipity exhibition at the ICA London, to Stewart Brand’s Whole Earth Catalog in California. Willats’ own practice deployed the frameworks that he and his collaborators devised across _Control_’s pages in a variety of ways, from computer simulations to social and educational projects such as the Centre for Behavioral Art (1972-73). _Control_ is not only a key node within Willats’ body of work; it offers a fascinating toolkit for reconsidering the present status of social hierarchy and networked interaction.
+----
+author: Stephen Willats, Sarah Hamerman
+----
+authorlink: http://avant.org/artifact/stephen-willats/
+----
+tags:
+  - self-organization
+
+----
+visible: true

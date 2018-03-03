@@ -1,0 +1,26 @@
+title: Floating baseline
+----
+view: entry
+----
+date: 2018-03-01
+----
+tags:
+  - control
+  - determinism
+
+----
+text: Sarah Hamerman: Could you briefly introduce your thinking about the relationship between cybernetics and _Control_ magazine?
+
+Stephen Willats: _Control_ magazine came about from a particular period of my life in the middle sixties, when I was trying to develop new paradigms for art practice which seemed connected to the world that was emerging. At that time, there was an exciting feeling, that the world we were in was moving forward, becoming more liberated and more socially self-responsible. It was a rejection of the idea of determinism. The early 1950s was still characterized by determinist thinking, but in the late ‘50s people began to develop other models that established many aspects of the world we live in today. The idea of fluidity, the idea of complexity, the idea of relativity, the idea of randomness, and entropy. But what was interesting at that moment was the notion that the world isn’t simple, as presumed in a reductive sort of society, an object-based society of property and possessions, where the self is treated as an object. This is a kind of reductist view, and was associated with competitive modes of behavior. There was emerging this idea that the world was actually complex, and within the complexity of the world there were more variables, more richness, more possibilities to develop new paradigms for society.
+
+Amongst all that was the idea that we needed new tools to create a dynamic picture of this new world, we needed tools to model it. And cybernetics was a modelling tool. It was a means of creating philosophical reductist pictures of a world that didn’t yet exist. It can be descriptive, in that it can describe what’s there, but it can also describe what’s possible. In that time, especially in Europe, there was a legacy that had been handed down to us, which put you in a box. In fact, it was kind of claustrophobic. That box was called the artist and the gallery. Pictures hung on walls and you stood in front of them, to put it crudely. It was a transmission situation that functioned a bit like a radio. If you think of the radio, I always think of the radio as last-century thinking. It comes out of the 19th century idea of transmission. There’s a transmitter and there’s a receiver, and in the traditional modus operandi of the artist and the picture, that’s the same modus operandi, really. In contemporary life—it wasn’t true 500 or 600 years ago, but that’s what it had become. We felt that we were in a straitjacket.
+
+So I decided to kind of go back to zero to rethink the whole thing, and I stopped calling myself an artist. I had to find a new name for this this new creative person in this new society. At that point we were thinking laterally all the time. We were making lateral connections between other disciplines and other specializations. Hierarchical societies’ use knowledge as a means of power rather than an elevative mechanism. We wanted to break that all down. We were talking about one-layer networks, the idea that information was completely available through a network.
+
+![](dat://2294f8789a7dac7028c2aaebd47d287b148f45ad35ba697eb80a505066420a40/content/entries/super/control_5.png)
+
+Like a floating baseline—everytime a node in the network received information, there was complete coupling to all other nodes…
+
+So I stopped calling myself an artist. I wanted to look at all means of communication within society to take what I could from everywhere I could, and reformulate it into a new way of operating. I needed a new title for myself, so I called myself a Conceptual Designer. As a Conceptual Designer I did various things. One of them you might know about, I developed _Multiple Clothing_. I wanted to intervene in the fabric of society directly. Not just sit inside a box, but to move freely within the interpersonal infrastructure of society. To create the means of people transforming their own sense of reality and identity and vision of the future. I also made self-organizing furniture.
+----
+visible: true
