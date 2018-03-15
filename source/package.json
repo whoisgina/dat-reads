@@ -13,7 +13,7 @@
   "dependencies": {
     "choo": "^6.0.0",
     "dateformat": "^3.0.3",
-    "enoki": "^2.0.0",
+    "enoki": "^2.0.5",
     "markdown-it": "^8.4.1",
     "markdown-it-implicit-figures": "^0.6.0",
     "nanocomponent": "^6.4.0",
