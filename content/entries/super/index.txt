@@ -17,7 +17,7 @@ Amongst all that was the idea that we needed new tools to create a dynamic pictu
 
 So I decided to kind of go back to zero to rethink the whole thing, and I stopped calling myself an artist. I had to find a new name for this this new creative person in this new society. At that point we were thinking laterally all the time. We were making lateral connections between other disciplines and other specializations. Hierarchical societies’ use knowledge as a means of power rather than an elevative mechanism. We wanted to break that all down. We were talking about one-layer networks, the idea that information was completely available through a network.
 
-![](dat://2294f8789a7dac7028c2aaebd47d287b148f45ad35ba697eb80a505066420a40/content/entries/super/control_5.png)
+![](/content/entries/super/control_5.png)
 
 Like a floating baseline—everytime a node in the network received information, there was complete coupling to all other nodes…
 

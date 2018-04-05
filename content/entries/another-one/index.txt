@@ -8,7 +8,7 @@ text: Since 1965, British artist [Stephen Willats](http://stephenwillats.com/) h
 
 Cybernetics was famously defined by Norbert Wiener as “the scientific study of communication and control in the animal and the machine.” The models of feedback that cyberneticians developed were transdisciplinary from the outset, bridging the worlds of computation and engineering with those of design, art, and counterculture.
 
-![](dat://2294f8789a7dac7028c2aaebd47d287b148f45ad35ba697eb80a505066420a40/content/entries/another-one/fig_1.png)
+![](/content/entries/another-one/fig_1.png)
 
 According to [Anthony Hudek](http://www.ravenrow.org/texts/55/), “It is … _Control_’s function as a self-determining information network, instead of its content, that makes it truly cybernetic”: while being about networks, the magazine also represents a network in itself. Willats’ choice of title, _Control_, signals this departure from traditional models of editorial authority, seeking instead to develop a conceptual practice determined by the networked relationships of coordinating agents. Artists’ publishing served as a key means of actualizing these ideas. The magazine has always been self-published, self-funded, and free of advertising, while also attaining a broadly international reach.
 
