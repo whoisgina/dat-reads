@@ -1,7 +1,7 @@
 {
-  "name": "enoki-design-vacant",
-  "version": "0.1.1",
-  "description": "A simple place to start",
+  "name": "enoki-design-jacinto",
+  "version": "0.1.2",
+  "description": "A simple blog design",
   "main": "index.js",
   "scripts": {
     "start": "watchify index.js -o ../bundles/bundle.js -t sheetify -p [ css-extract -o ../bundles/bundle.css ] index.js",
