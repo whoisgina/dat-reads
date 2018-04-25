@@ -6,7 +6,7 @@ module.exports = view
 function view (state, emit) {
   return html`
     <div>
-      ${state.page.title}
+      ${state.page().v('title')}
     </div>
   `
 }

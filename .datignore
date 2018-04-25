@@ -1,4 +1,6 @@
 .DS_Store
 .git
+node_modules
+node_modules/**
 source/node_modules
 source/node_modules/**
