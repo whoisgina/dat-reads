@@ -6,7 +6,7 @@ module.exports = view
 function view (state, emit) {
   return html`
     <div class="content copy copy-width">
-      ${content(state.page.text)}
+      ${content(state.page().v('text'))}
     </div>
   `
 }

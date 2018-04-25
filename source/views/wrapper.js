@@ -7,14 +7,13 @@ var views = require('./')
 module.exports = view
 
 function view (state, emit) {
-  state.page = state.content[state.href || '/']
-
+  var page = state.page
   // loading
   if (!state.site.loaded) return renderLoading(state, emit)
   // 404
-  if (!state.page) return renderNotFound(state, emit)
+  if (!page().v('url')) return renderNotFound(state, emit)
   // view
-  var view = views[state.page.view] || views.default
+  var view = views[page().v('view')] || views.default
 
   // title
   var title = getTitle(state)
@@ -51,7 +50,7 @@ function renderNotFound (state, emit) {
 }
 
 function renderStyles (state, emit) {
-  var page = state.content['/']
+  var page = state.page('/').v()
   return html`
     <style>
       :root {
@@ -63,9 +62,10 @@ function renderStyles (state, emit) {
 }
 
 function renderNavigation (state, emit) {
-  var home = state.content['/']
-  var pages = objectValues(home.pages)
-    .map(page => state.content[page.url])
+  var home = state.page('/').v()
+  var pages = state.page('/')
+    .pages()
+    .toArray()
     .filter(page => page.visible !== false)
 
   return html`
@@ -80,7 +80,7 @@ function renderNavigation (state, emit) {
   `
 
   function renderLink (props) {
-    var activeClass = state.href && props.url.indexOf(state.href) >= 0 ? 'link-active' : ''
+    var activeClass = state.href && state.href.indexOf(props.url) >= 0 ? 'link-active' : ''
     return html`
       <span class="comma-item ${activeClass}"><a href="${props.url}">${props.title}</a></span>
     `
@@ -88,8 +88,8 @@ function renderNavigation (state, emit) {
 }
 
 function getTitle (state) {
-  var siteTitle = state.content['/'].title
-  var pageTitle = state.page.title
+  var siteTitle = state.page('/').v('title')
+  var pageTitle = state.page().v('title')
   
   return siteTitle !== pageTitle
     ? siteTitle + ' | ' + pageTitle
