@@ -1,6 +1,6 @@
 {
   "name": "enoki-design-jacinto",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "A simple blog design",
   "main": "source/index.js",
   "scripts": {
