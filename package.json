@@ -28,7 +28,7 @@
     "budo": "^11.2.0",
     "css-extract": "^1.3.0",
     "es2040": "^1.2.6",
-    "sheetify": "^7.0.0",
+    "sheetify": "^7.3.2",
     "sheetify-cssnext": "^1.0.7",
     "tinyify": "^2.4.0",
     "watchify": "^3.10.0",
