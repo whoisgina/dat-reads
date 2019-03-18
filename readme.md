@@ -17,5 +17,5 @@ Clone it, add it to your library in Beaker, and start adding your very own books
 - a more interactive timeline (show books on hover! sort! color code it! embed it elsewhere?)
 - smarter tags
 
-### Development
-From the project root, run `yarn install`. Once the dependencies are installed, run `yarn run dev` for development and `yarn run build` to bundle. Add it to your library in Beaker
+#### Development
+From the project root, run `yarn install`. Once the dependencies are installed, run `yarn run dev` for development and `yarn run build` to bundle. Add it to your library in Beaker and then add books via the [Enoki Panel](dat://panel.enoki.site), or manually in `/content/books`.
