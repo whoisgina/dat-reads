@@ -1,12 +1,14 @@
 var html = require('choo/html')
-var feedEntries = require('../components/feed-entries')
+var books = require('../components/books')
+var timeline = require('../components/timeline')
 
 module.exports = view
 
 function view (state, emit) {
   return html`
-    <div>
-      ${feedEntries(state, emit)}
-    </div>
+    <main>
+      ${books(state, emit)}
+    </main>
   `
 }
+      // ${timeline(state, emit)}

@@ -1,12 +1,12 @@
 var html = require('choo/html')
-var renderBook = require('../components/book')
+var books = require('../components/books')
 
 module.exports = view
 
 function view (state, emit) {
   return html`
-    <div>
-      ${state.page().v('title')}
-    </div>
+    <main>
+      ${books(state, emit)}
+    </main>
   `
 }

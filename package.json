@@ -1,7 +1,7 @@
 {
-  "name": "enoki-design-jacinto",
-  "version": "0.2.0",
-  "description": "A simple blog design",
+  "name": "dat-reads",
+  "version": "0.1.0",
+  "description": "Goodreads but good",
   "main": "source/index.js",
   "scripts": {
     "start": "enoki content -w & watchify source/index.js -o bundles/bundle.js -t sheetify -p [ css-extract -o bundles/bundle.css ] source/index.js",
@@ -9,12 +9,12 @@
     "build": "enoki content && browserify source/index.js -o bundles/bundle.js -t yo-yoify -t  [ sheetify -u sheetify-cssnext ] -g es2040 -p [ css-extract -o bundles/bundle.css ] -p tinyify"
   },
   "keywords": [],
-  "author": "Jon-Kyle <contact@jon-kyle.com> (http://jon-kyle.com)",
-  "license": "Apache 2.0",
+  "author": "Gina Giampaolo<hello@whoisgina.com> (https://whoisgina.com)",
+  "license": "Apache-2.0",
   "dependencies": {
     "choo": "^6.0.0",
     "dateformat": "^3.0.3",
-    "enoki": "^2.1.0",
+    "enoki": "github:joehand/enoki",
     "markdown-it": "^8.4.1",
     "markdown-it-implicit-figures": "^0.6.0",
     "nanocomponent": "^6.4.0",

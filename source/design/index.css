@@ -1,18 +1,37 @@
 :root {
-  --background: #fff;
-  --foreground: #000;
+  /* Colors */
+  --color-white: #fff;
+  --color-black: #000;
+
+  /* Typography */
+  --type-family-sans: 'Work Sans', sans-serif;
+
+  --type-size-small: 0.75rem;
+
+  --type-size-base: 1rem;
+  --type-leading-base: 1.5;
+
+  --type-size-medium: 1.5rem;
+
+  /* Spacing */
+  --spacing-base: 2rem;
+  --color-black: #000;
 }
 
 html {
-  font-size: 65.25%;
+  font-size: 16px;
+}
+
+main {
+  padding: var(--spacing-base);
 }
 
 body {
-  font-family: 'Lunch', sans-serif;
-  background: var(--background);
-  color: var(--foreground);
-  line-height: 1.5;
-  font-size: 1.8rem;
+  font-family: var(--type-family-sans);
+  background: var(--color-white);
+  color: var(--color-black);
+  line-height: var(--type-leading-base);
+  font-size: var(--type-size-base);
 }
 
 a {
@@ -22,111 +41,11 @@ a {
 
 h1 { font-weight: bold }
 
-/**
- * nav
- */
-
 nav {
-  padding: 2rem;
+  padding: var(--spacing-base);
 }
 
 .link-active { font-weight: bold }
-
-/**
- * copy
- */
-
-.copy > * {
-  margin-bottom: 2.7rem;
-  margin-top: 2.7rem;
-}
-
-.copy > *:first-child { margin-top: 0 }
-.copy > *:last-child { margin-bottom: 0 }
-
-.copy a {
-  text-decoration: underline;
-}
-
-.copy figure {
-  margin: 0;
-}
-
-.copy ul, .copy li {
-  list-style: disc;
-}
-
-.copy li {
-  margin-left: 2rem;
-}
-
-.copy-width > *:not(figure) {
-  max-width: 55rem;
-}
-
-/**
- * entries
- */
-
-.entries {
-  margin-top: -2rem; 
-}
-
-.entries > * {
-  margin-bottom: -1.8rem;
-  max-height: 18.75rem;
-  overflow: hidden;
-  transform: translate3d(0, 1.8rem, 0);
-  transition: transform 150ms ease-out;
-}
-
-.entries > *:nth-child(even) {
-  background: var(--background);
-  color: var(--foreground);
-}
-
-.entries > *:nth-child(odd) {
-  background: var(--foreground);
-  color: var(--background);
-}
-
-.entries > *:hover {
-  transform: translate3d(0, 0, 0);
-}
-
-/**
- * entry
- */
-
-.container {
-  grid-template-columns: repeat(12, 1fr);
-  grid-column-gap: 2rem;
-  display: grid;
-  padding: 2rem;
-}
-
-.container > :nth-child(1) { grid-column-end: span 4 }
-.container > :nth-child(2) { grid-column-end: span 8 }
-
-/**
- * content
- */
-
-.content {
-  padding: 2rem;
-}
-
-/**
- * lists
- */
-
-.comma-item:not(:last-child):after {
-  content: ', ';
-}
-
-/**
- * not found
- */
 
 .notfound {
   display: flex;
@@ -135,10 +54,6 @@ nav {
   height: calc(100vh - 8rem);
   width: 100vw;
 }
-
-/**
- * loading
- */
 
 .loading {
   --radius: 1rem;
@@ -149,9 +64,9 @@ nav {
   position: fixed;
   top: 50%;
   left: 50%;
-  border: 3px solid var(--foreground);
-  border-top: 3px solid var(--background);
-  border-left: 3px solid var(--background);
+  border: 3px solid var(--color-black);
+  border-top: 3px solid var(--color-white);
+  border-left: 3px solid var(--color-white);
   animation: spin 1s linear infinite;
 }
 
@@ -160,38 +75,144 @@ nav {
   100% { transform: rotate(360deg) }
 }
 
-/**
- * typography
- */
+.books {
+  display: grid;
+  grid-gap: 4rem;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
 
-@font-face {
-  font-family: 'Lunch';
-  src: url('/assets/lunchtype22-light-webfont.woff2') format('woff2'),
-       url('/assets/lunchtype22-light-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+.book__title {
+  font-weight: 600;
+  line-height: 1.25;
+  margin: 0.25rem 0;
+}
+
+.book__cover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.book__author {
+  font-size: var(--type-size-small);
+}
+
+.book__dates-read {
+  font-size: var(--type-size-small);
+  margin-bottom: 0.5rem;
+  opacity: .7;
+}
+
+.book__tag {
+  border-radius: 10px;
+  border: 1px solid var(--color-black);
+  color: var(--color-black);
+  font-size: var(--type-size-small);
+  margin-right: 3px;
+  padding: 5px 8px;
+  white-space: nowrap;
+  word-break: keep-all;
+}
+
+.book__tag:hover {
+  background: var(--color-black);
+  color: white;
+}
+
+.timeline {
+  display: grid;
+  grid-template-columns: repeat(365, 1fr);
+  margin: var(--spacing-base) 0;
+  overflow: hidden;
+}
+
+.timeline h1 {
+  font-size: var(--type-size-medium);
+  margin-bottom: var(--spacing-base);
+}
+
+/* lol sorry */
+.january {
+  grid-column: 1 / 31;
+}
+
+.february {
+  grid-column: 31 / 59;
+}
+
+.march {
+  grid-column: 59 / 88;
+}
+
+.april  {
+  grid-column: 88 / 120;
+}
+
+.may {
+  grid-column: 120 / 151;
+}
+
+.june {
+  grid-column: 151 / 181;
+}
+
+.july {
+  grid-column: 181 / 212;
+}
+
+.august {
+  grid-column: 212 / 243;
+}
+
+.september {
+  grid-column: 243 / 273;
+}
+
+.october {
+  grid-column: 273 / 304;
+}
+
+.november {
+  grid-column: 304 / 334;
+}
+
+.december {
+  grid-column: 334 / 366;
+}
+
+.month {
+  font-size: var(--type-size-small);
+  grid-row: 0 / 1;
+  padding-left: 4px;
+  position: relative;
+}
+
+.month::after {
+  border-left: 1px solid black;
+  content: '';
+  height: 400px;
+  left: 0;
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+}
+
+.timeline h1 { grid-column: 1 / -1; }
+
+.timeline__book {
+  background: black;
+  height: 4px;
+  margin-bottom: 4px;
 }
 
 @font-face {
-  font-family: 'Lunch';
-  src: url('/assets/lunchtype23-light-italic-webfont.woff2') format('woff2'),
-    url('/assets/lunchtype23-light-italic-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: italic;
+  font-family: 'Work Sans';
+  src: url('/assets/fonts/WorkSans-Regular.woff2') format('woff2'),
+       url('/assets/fonts/WorkSans-Regular.woff') format('woff');
+  font-weight: 400;
 }
 
 @font-face {
-  font-family: 'Lunch';
-  src: url('/assets/lunchtype22-medium-webfont.woff2') format('woff2'),
-    url('/assets/lunchtype22-medium-webfont.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Lunch';
-  src: url('/assets/lunchtype23-medium-italic-webfont.woff2') format('woff2'),
-    url('/assets/lunchtype23-medium-italic-webfont.woff') format('woff');
-  font-weight: bold;
-  font-style: italic;
+  font-family: 'Work Sans';
+  src: url('/assets/fonts/WorkSans-Medium.woff2') format('woff2'),
+       url('/assets/fonts/WorkSans-Medium.woff') format('woff');
+  font-weight: 600;
 }

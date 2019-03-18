@@ -1,0 +1,39 @@
+{
+  "title": "Book",
+  "pages": false,
+  "fields": {
+    "title": {
+      "label": "Title",
+      "type": "text"
+    },
+    "author": {
+      "label": "Author",
+      "type": "text"
+    },
+    "dateStarted": {
+      "label": "Date started",
+      "type": "date",
+      "default": "",
+      "width": "1/2"
+    },
+    "dateCompleted": {
+      "label": "Date completed",
+      "type": "date",
+      "default": "",
+      "width": "1/2"
+    },
+    "tags": {
+      "label": "Tags",
+      "type": "tags",
+      "width": "1/2"
+    },
+    "notes": {
+      "label": "Notes",
+      "type": "textarea"
+    },
+    "cover": {
+      "label": "Cover",
+      "type": "files"
+    }
+  }
+}
