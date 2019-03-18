@@ -1,7 +1,0 @@
-title: Entries
-----
-view: entries
-----
-visible: false
-----
-sort: reverse-chronological

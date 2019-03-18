@@ -2,11 +2,6 @@ title: About
 ----
 view: about
 ----
-text: These interview excerpts are presented by [Avant](http://avant.org), in part, to extend the discussions held at the Cybernetics Conference on November 18, 2017 in NYC.
-
-- [Stephen Willats](http://avant.org/author/stephen-willats)
-- [Sarah Hamerman](http://avant.org/author/sarah-hamerman)
-
-CC BY-NC 4.0
+text: These are all of the books that I read in 2018!
 ----
-visible: true
+visible: false

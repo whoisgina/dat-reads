@@ -1,9 +1,3 @@
-title: Jacinto
+title: 📚✨
 ----
 view: home
-----
-text: Enokitake, also Enokidake or Enoki, are cultivars of Flammulina velutipes, also known by the name golden needle mushroom or lily mushroom.
-----
-foreground: #ffffff
-----
-background: #000000
