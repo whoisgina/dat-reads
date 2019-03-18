@@ -1,13 +1,21 @@
-<h1 align="center">Enoki / Jacinto</h1>
+## Datreads: Goodreads but good!
+### Keep track of the books that you've been reading and share them with your book-loving friends!
 
-A simple blog design for Enoki.
+Clone it, add it to your library in Beaker, and start adding your very own books via the [Enoki Panel](dat://panel.enoki.site). Wow! Includes [Choo](https://github.com/choojs/choo) as a front-end framework, and [Sheetify](https://github.com/stackcss/sheetify) for css-in-js.
 
-Consider it a boilerplate instead of a reference to study. Takes these ideas with you to use from memory in the future.
+#### Current Datreads features:
+- Look at all of your books in a big nice grid!
+- At _least_ 90% less visual elements on the page than on almost any Goodreads page
+- See your books on a yearly timeline, which is sort of fun! What were you reading while the world was in various states of disarray? What did you read super fast, like it was a book snack? What did you slog through _f o r e v e r_?
+- Jeff Bezos doesn't know what you're reading
 
-Includes [Choo](https://github.com/choojs/choo) as a front-end framework, and [Sheetify](https://github.com/stackcss/sheetify) for css-in-js.
+#### Future features:
+- save books that you'd like to read but haven't yet
+- display books by year
+- sort books by title, author, or date read
+- display notes/reviews
+- a more interactive timeline (show books on hover! sort! color code it! embed it elsewhere?)
+- smarter tags
 
-## Customization
-
-If you created your site from the Enoki Panel, `cd` to the `source` directory and run `npm install`. Once the dependencies are installed, run `npm start` for development and `npm run build` for bundling.
-
-To stay up to date, clone the [repository](https://github.com/jondashkyle/enoki-design-vacany) and `git pull origin master` changes.
+### Development
+From the project root, run `yarn install`. Once the dependencies are installed, run `yarn run dev` for development and `yarn run build` to bundle. Add it to your library in Beaker
