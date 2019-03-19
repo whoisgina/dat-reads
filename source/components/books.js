@@ -17,25 +17,27 @@ function books (state, emit) {
   var sortedBooks = getPagesSort(books, 'chronological')
 
   return html`
-    <ul class="books">
-      ${sortedBooks.map(renderBook)}
-    </ul>
+    <div>
+      <ul class="books">
+        ${sortedBooks.map(renderBook)}
+      </ul>
 
-    <div class="timeline">
-      <h1>2018 reading timeline</h1>
-      <div class="january month">J</div>
-      <div class="february month">F</div>
-      <div class="march month">M</div>
-      <div class="april month">A</div>
-      <div class="may month">M</div>
-      <div class="june month">J</div>
-      <div class="july month">J</div>
-      <div class="august month">A</div>
-      <div class="september month">S</div>
-      <div class="october month">O</div>
-      <div class="november month">N</div>
-      <div class="december month">D</div>
-      ${sortedBooks.map(renderTimelineItem)}
+      <div class="timeline">
+        <h1>2018 reading timeline</h1>
+        <div class="january month">J</div>
+        <div class="february month">F</div>
+        <div class="march month">M</div>
+        <div class="april month">A</div>
+        <div class="may month">M</div>
+        <div class="june month">J</div>
+        <div class="july month">J</div>
+        <div class="august month">A</div>
+        <div class="september month">S</div>
+        <div class="october month">O</div>
+        <div class="november month">N</div>
+        <div class="december month">D</div>
+        ${sortedBooks.map(renderTimelineItem)}
+      </div>
     </div>
   `
 
