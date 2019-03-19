@@ -21,6 +21,11 @@ function timelineBook (state, emit, index) {
   return html`
     <div class="timeline__book"
          style="grid-column: ${dayOfYear(state.dateStarted)} / ${dayOfYear(state.dateCompleted)}; grid-row: ${index + 15}">
+         <div class="timeline__book__detail">
+          <div class="timeline__book__detail__title">${state.title}</div>
+          <div class="timeline__book__detail__author">${state.author}</div>
+         </div>
+
     </div>
   `
 }
