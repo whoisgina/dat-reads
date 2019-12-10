@@ -1,6 +1,8 @@
 ## 📚✨ Datreads: Goodreads but good!
 ### Keep track of the books that you've been reading and share them with your book-loving friends!
 
+![Grid of books](https://github.com/whoisgina/dat-reads/raw/master/images/grid.png)
+
 Clone it, add it to your library in Beaker, and start adding your very own books via the [Enoki Panel](dat://panel.enoki.site). Wow! Includes [Choo 🚂](https://github.com/choojs/choo) as a front-end framework, and [Sheetify](https://github.com/stackcss/sheetify) for css-in-js.
 
 #### Current Datreads features:
@@ -16,6 +18,8 @@ Clone it, add it to your library in Beaker, and start adding your very own books
 - display notes/reviews
 - a more interactive timeline (show books on hover! sort! color code it! embed it elsewhere?)
 - smarter tags
+
+![Reading timeline](https://github.com/whoisgina/dat-reads/raw/master/images/timeline.png)
 
 #### Development
 From the project root, run `yarn install`. Once the dependencies are installed, run `yarn run dev` for development and `yarn run build` to bundle. Add it to your library in Beaker and then add books via the [Enoki Panel](dat://panel.enoki.site), or manually in `/content/books`.
